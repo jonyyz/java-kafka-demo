@@ -58,6 +58,7 @@ public class App {
       System.out.println("Running...");
       dispatchMessage("my-topic", "Hello from Kafka!");
       System.out.println("Message dispatched.");
+      var consumer = getConsumer();
       consumer.subscribe(Collections.singletonList("my-topic"));
       ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
       for (var record : records) {
