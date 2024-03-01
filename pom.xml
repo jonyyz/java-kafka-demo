@@ -35,7 +35,6 @@
           <mainClass>com.kafkaexample.App</mainClass>
         </configuration>
       </plugin>
-
     </plugins>
   </build>
 </project>
