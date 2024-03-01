@@ -9,8 +9,7 @@ services:
   kafka:
     image: confluentinc/cp-kafka:latest
     environment:
-      ZOOKEEPER_CONNECT_STRING: zookeeper:2181
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_LISTENERS: localhost:9092
     ports:
       - "9092:9092"
-      - "9000:9000"
